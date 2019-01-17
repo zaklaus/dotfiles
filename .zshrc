@@ -184,6 +184,7 @@ alias tvh='mpv --ytdl-format="bestvideo[height<=?480]+bestaudio/best" $1'
 alias tvp='mpv --ytdl-format="bestvideo[height<=?360]+bestaudio/best" $1'
 ytm(){youtube-dl -f 'bestaudio[ext=m4a]' -o - "ytsearch:$*" | mpv -}
 ytv(){youtube-dl -o - "ytsearch:$*" | mpv -}
+yts(){CNT=$1; shift; youtube-dl -s --ignore-config --ignore-errors --skip-download --geo-bypass --youtube-skip-dash-manifest --get-id --get-title "ytsearch$CNT:$*" | sed '$!N;s/\n/ -- /'}
 ytf(){youtube-dl -F "ytsearch:$*"}
 tvx(){mpv --ytdl-format="$1" $2;}
 tvd(){youtube-dl -F $1;}
