@@ -71,7 +71,7 @@ ${goto 11} ${color0}Processes: $color$processes  ${color0}Running: $color$runnin
 ${goto 3} ${color0}$hr
 ${goto 1} ${color0}File systems (Used/Total/Free):${alignr}${color0}
   ${color}rootfs ${color0}U:$color${fs_used /}/${color0}T:$color${fs_size /}/${color0}F:$color${fs_free /} ${fs_bar 6 /}
-  ${color}backup ${color0}U:$color${fs_used /media/backup}/${color0}T:$color${fs_size /media/backup}/${color0}F:$color${fs_free /media/backup} ${fs_bar 6 /media/backup}
+#  ${color}backup ${color0}U:$color${fs_used /media/backup}/${color0}T:$color${fs_size /media/backup}/${color0}F:$color${fs_free /media/backup} ${fs_bar 6 /media/backup}
 ${if_up enp7s0}${goto 1} ${color0} Network IP: $color${addr enp7s0}
 ${goto 2}   ${color1}Up: $color${totalup enp7s0} @ ${upspeedf enp7s0}KiB/s${goto 198}${color1}Down: $color${totaldown enp7s0} @ ${downspeedf enp7s0}KiB/s
 ${goto 3}   ${color0}${upspeedgraph enp7s0 28,169 ff3333 3399ff -l} $alignr${color0}${downspeedgraph enp7s0 28,169 3399ff ff3333 -l}${else}
