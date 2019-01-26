@@ -113,6 +113,7 @@ alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
+alias cn='c; neofetch'			    # cn:	    Clear and display neofetch
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias vimgo='vim -u ~/.vimrc.go'
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
