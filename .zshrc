@@ -1,6 +1,3 @@
-clear
-neofetch
-
 plugins=(
   git
   k

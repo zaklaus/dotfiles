@@ -21,7 +21,7 @@
                {
                 "class": "^UXTerm$",
                 "instance": "^xterm$",
-                "title": "^uxterm$",
+                "title": "^main$",
                 "transient_for": "^$"
                }
             ],
@@ -73,7 +73,7 @@
                        {
                         "class": "^UXTerm$",
                         "instance": "^xterm$",
-                        "title": "^uxterm$",
+                        "title": "^music$",
                         "transient_for": "^$"
                        }
                     ],
@@ -129,7 +129,7 @@
                {
                 "class": "^UXTerm$",
                 "instance": "^xterm$",
-                "title": "^uxterm$",
+                "title": "^matrix$",
                 "transient_for": "^$"
                }
             ],
