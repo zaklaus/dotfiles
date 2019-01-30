@@ -1,6 +1,7 @@
 plugins=(
   git
   k
+  zsh-autosuggestions
 )
 
 export PATH=$HOME/bin:/usr/local/go/bin:/usr/local/bin:$HOME/go/bin:$PATH
@@ -38,12 +39,15 @@ if [ -n "$DISPLAY" ]; then
 else 
         export BROWSER="elinks"
 fi
+
 export EDITOR="vim"
+export TERM=xterm-256color
 export GREP_COLORS="ms=00;33:mc=00;33"
 #export IPLAYER_OUTDIR="/home/zaklaus/Media/Videos/TV Programmes/iPlayer/"
-export MANPAGER="/bin/zsh -c \"col -bx | vim -c 'set ft=man' -\"" #http://www.reddit.com/r/vim/comments/23u4ly/what_other_apps_are_vimlike/ch0ykcy
+#export MANPAGER="/bin/zsh -c \"col -bx | vim -c 'set ft=man' -\"" #http://www.reddit.com/r/vim/comments/23u4ly/what_other_apps_are_vimlike/ch0ykcy
 export PAGER="/bin/vimpager"
 export RANGER_LOAD_DEFAULT_RC="FALSE"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=8
 
 # git
 alias gitp="git push"
@@ -139,4 +143,8 @@ source ~/mwapi.sh
 
 # opam configuration
 test -r /home/zaklaus/.opam/opam-init/init.zsh && . /home/zaklaus/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+function assh {
+	autossh -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" -M 0 $@
+}
 
