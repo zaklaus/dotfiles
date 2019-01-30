@@ -53,10 +53,10 @@ for_window [class="^.*"] border pixel 0
 for_window [class="uxterm"] border pixel 0
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -65,10 +65,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+colon move right
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+colon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -203,6 +203,7 @@ bindsym Print exec flameshot gui
 exec --no-startup-id polybar main
 exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/black.png
 exec --no-startup-id compton
+exec --no-startup-id xrdb -load ~/.Xresources
 # exec --no-startup-id nm-applet
 exec --no-startup-id parcellite
 
@@ -219,3 +220,9 @@ for_window [class="Godot"] floating enable
 for_window [title=".*Godot Engine*."] floating disable
 for_window [title="QZDOOM*."] floating enable
 for_window [title="Rurik*."] floating enable
+
+# border stuff
+
+# border on, see where focus is
+bindsym $mod+semicolon exec i3-msg border pixel 3
+bindsym --release $mod+semicolon exec i3-msg border pixel 0
