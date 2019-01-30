@@ -148,3 +148,4 @@ function assh {
 	autossh -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" -M 0 $@
 }
 
+alias dog='pygmentize -g'
