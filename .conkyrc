@@ -68,7 +68,8 @@ ${goto 27} ${color0}CPU6: $color${freq_g 6}GHz ${cpu cpu6}% ${cpubar cpu6 4}
 ${goto 27} ${color0}CPU7: $color${freq_g 7}GHz ${cpu cpu7}% ${cpubar cpu7 4}
 ${goto 27} ${color0}CPU8: $color${freq_g 8}GHz ${cpu cpu8}% ${cpubar cpu8 4}
 ${goto 20} ${color0}RAM: $color$mem/$memmax - $memperc% ${membar 4}
-${goto 11} ${color0}Processes: $color$processes  ${color0}Running: $color$running_processes ${goto 212}${color0}Updates: ${color3}${execpi 3600 checkupdates | wc -l}$alignr${color0}Email:${color4} 0 
+${goto 11} ${color0}Processes: $color$processes  ${color0}Running: $color$running_processes ${goto 212}${color0}Updates: ${color3}${execpi 3600 checkupdates | wc -l}$alignr${color0}Answer: ${color4}42
+ 
 ${goto 3} ${color0}$hr
 ${goto 1} ${color0}File systems (Used/Total/Free):${alignr}${color0}
   ${color}rootfs ${color0}U:$color${fs_used /}/${color0}T:$color${fs_size /}/${color0}F:$color${fs_free /} ${fs_bar 6 /}

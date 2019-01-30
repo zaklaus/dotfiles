@@ -6,6 +6,8 @@ cp -rf ~/.tmux.conf $X/
 cp -rf ~/.Xresources $X/
 cp -rf ~/.Xresources-dotres $X/
 cp -rf ~/ldev.sh $X/
+cp -rf ~/dhcp.sh $X/
+cp -rf ~/.conkyrc $X/
 
 mkdir -p $X/.config/mpd
 mkdir -p $X/.config/i3
