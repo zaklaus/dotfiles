@@ -9,16 +9,19 @@
 
 Xcursor.theme:              ATER_Blue
 
-XTerm*vt100.faceName:       inconsolata
+XTerm*vt100.faceName:       Inconsolata for Powerline
 XTerm*vt100.faceSize:       9
 
+URxvt*faceName: Inconsolata for Powerline
 URxvt*termName:             rxvt-256color
 URxvt.letterSpace:          -1
-URxvt.font:                 xft:inconsolata:size=9,\
+URxvt.font:                 xft:Inconsolata\ for\ Powerline:size=9,\
+			    xft:Powerline\ Symbols,\
                             xft:Liberation Mono,\
                             xft:Ricty,\
                             xft:symbola
-URxvt.boldFont:             xft:inconsolata:bold:size=9,\
+URxvt.boldFont:             xft:Inconsolata\ for\ Powerline:bold:size=9,\
+			    xft:Powerline\ Symbols,\
                             xft:Liberation Mono,\
                             xft:Ricty,\
                             xft:symbola
@@ -40,4 +43,6 @@ URxvt.keysym.M-s:           perl:keyboard-select:search
 URxvt.url-select.launcher:	firefox
 URxvt.url-select.underline:	true
 URxvt*boldMode:             false
-
+URxvt.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)

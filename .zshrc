@@ -45,7 +45,7 @@ export TERM=xterm-256color
 export GREP_COLORS="ms=00;33:mc=00;33"
 #export IPLAYER_OUTDIR="/home/zaklaus/Media/Videos/TV Programmes/iPlayer/"
 #export MANPAGER="/bin/zsh -c \"col -bx | vim -c 'set ft=man' -\"" #http://www.reddit.com/r/vim/comments/23u4ly/what_other_apps_are_vimlike/ch0ykcy
-export PAGER="/bin/vimpager"
+export PAGER="/usr/bin/pager"
 export RANGER_LOAD_DEFAULT_RC="FALSE"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=8
 
@@ -149,3 +149,10 @@ function assh {
 }
 
 alias dog='pygmentize -g'
+
+function zemacs {
+	emacs -nw $@
+}
+
+# added by travis gem
+[ -f /home/zaklaus/.travis/travis.sh ] && source /home/zaklaus/.travis/travis.sh

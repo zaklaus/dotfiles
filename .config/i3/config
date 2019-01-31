@@ -205,7 +205,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/black.png
 exec --no-startup-id compton
 exec --no-startup-id xrdb -load ~/.Xresources
 # exec --no-startup-id nm-applet
-exec --no-startup-id parcellite
+exec --no-startup-id autocutsel
 
 mode "moveit" {
     bindsym Up move up 20px
@@ -218,7 +218,7 @@ bindsym Mod4+m focus floating; mode "moveit"
 bindsym $mod+1 workspace number 1
 for_window [class="Godot"] floating enable
 for_window [title=".*Godot Engine*."] floating disable
-for_window [title="QZDOOM*."] floating enable
+# for_window [title="QZDOOM*."] floating enable
 # for_window [title="Rurik*."] floating enable
 
 # border stuff

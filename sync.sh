@@ -16,4 +16,5 @@ mkdir -p $X/.config/polybar
 cp -rf ~/.config/i3/config $X/.config/i3/
 cp -rf ~/.config/polybar/config $X/.config/polybar/
 cp -rf ~/.config/mpd/mpd.conf $X/.config/mpd/
+cp -rf ~/.spacemacs $X/.spacemacs
 echo Done!
